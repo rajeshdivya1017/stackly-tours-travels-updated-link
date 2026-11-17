@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d3a"><meta name="description" content="Sign in to your STACKLY Travel account.">
+  <title>Sign In | STACKLY Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page auth-login">
+  <main class="auth-shell">
+    <section class="auth-visual" aria-label="Travel inspiration">
+      <a class="auth-brand" href="index.html"><img src="assets/stackly logo.webp" alt="STACKLY Travel"></a>
+      <div class="visual-copy"><span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span><h1>The world is waiting.<br><em>Let’s go.</em></h1><p>Sign in and pick up where your next unforgettable journey begins.</p></div>
+      <div class="visual-bottom"><span>✦ Curated journeys. Extraordinary memories.</span><span>01 / EXPLORE</span></div>
+    </section>
+    <section class="auth-panel-wrap">
+      <div class="auth-top-actions"><button type="button" class="text-back" data-back>← Back</button><a class="home-link" href="index.html">⌂ Back to Home</a></div>
+      <div class="auth-card">
+        <div class="mobile-brand"><img src="assets/stackly logo.webp" alt="STACKLY Travel"></div>
+        <span class="eyebrow">WELCOME BACK</span><h2>Sign in to your account</h2><p class="auth-subtitle">Your next adventure is just a few clicks away.</p>
+        <form id="loginForm" novalidate>
+          <label for="loginEmail">Email address</label><input id="loginEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <div class="label-row"><label for="loginPassword">Password</label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <div class="password-wrap"><input id="loginPassword" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required><button type="button" class="toggle-password" aria-label="Show password">Show</button></div>
+          <label class="remember"><input type="checkbox" id="rememberMe"> <span>Remember me</span></label>
+          <p class="form-message" id="loginMessage" role="status" aria-live="polite"></p>
+          <button class="submit-btn" type="submit">Sign In <span>→</span></button>
+        </form>
+        <p class="switch-auth">Don’t have an account? <a href="register.html">Create an account</a></p>
+        <p class="auth-note">Secure your travel plans and keep every journey in one place.</p>
+      </div>
+    </section>
+  </main>
+  <script src="common.js"></script><script src="js/login.js"></script>
+</body></html>

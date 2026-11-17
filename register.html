@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#101d3a">
+  <meta name="description" content="Create your STACKLY Travel account."><title>Create Account | STACKLY Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page auth-register">
+  <main class="auth-shell">
+    <section class="auth-visual" aria-label="Tropical travel inspiration">
+      <a class="auth-brand" href="index.html"><img src="assets/stackly logo.webp" alt="STACKLY Travel"></a>
+      <div class="visual-copy"><span class="eyebrow">MAKE ROOM FOR WONDER</span><h1>More places.<br><em>More stories.</em></h1><p>Create your account and bring every travel dream a little closer.</p></div>
+      <div class="visual-bottom"><span>✦ Discover more. Experience more.</span><span>02 / BEGIN</span></div>
+    </section>
+    <section class="auth-panel-wrap">
+      <div class="auth-top-actions"><button type="button" class="text-back" data-back>← Back</button><a class="home-link" href="index.html">⌂ Back to Home</a></div>
+      <div class="auth-card register-card">
+        <div class="mobile-brand"><img src="assets/stackly logo.webp" alt="STACKLY Travel"></div>
+        <span class="eyebrow">START YOUR JOURNEY</span><h2>Create your account</h2><p class="auth-subtitle">Join STACKLY and make your next trip extraordinary.</p>
+        <form id="registerForm" novalidate>
+          <label for="fullName">Full name</label><input id="fullName" name="name" type="text" placeholder="Your full name" autocomplete="name" required minlength="2">
+          <label for="registerEmail">Email address</label><input id="registerEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="phone">Phone number <span class="optional">(optional)</span></label><input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel">
+          <label for="registerPassword">Password</label><div class="password-wrap"><input id="registerPassword" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8"><button type="button" class="toggle-password" aria-label="Show password">Show</button></div>
+          <label for="confirmPassword">Confirm password</label><div class="password-wrap"><input id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter your password" autocomplete="new-password" required><button type="button" class="toggle-password" aria-label="Show password">Show</button></div>
+          <p class="form-message" id="registerMessage" role="status" aria-live="polite"></p>
+          <button class="submit-btn" type="submit">Create Account <span>→</span></button>
+        </form>
+        <p class="switch-auth">Already have an account? <a href="login.html">Sign in</a></p>
+        <p class="auth-note">By creating an account, you agree to use STACKLY Travel responsibly.</p>
+      </div>
+    </section>
+  </main>
+  <script src="common.js"></script><script src="js/register.js"></script>
+</body></html>
